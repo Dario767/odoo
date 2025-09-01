@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Menú raíz de Catálogo (si no tiene uno, puede reutilizar “Configuración”) -->
+    <menuitem id="menu_catalogo_root" name="Catálogo" sequence="50"/>
+    <menuitem id="menu_marca_root" name="Marcas" parent="menu_catalogo_root" sequence="10"/>
+    <act_window id="action_marca"
+                name="Marcas"
+                res_model="marca.marca"
+                view_mode="tree,form"/>
+    <menuitem id="menu_marca_action"
+              name="Marcas"
+              parent="menu_marca_root"
+              action="action_marca"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,119 @@
+2025-08-27 17:48:58,183 19936 INFO ? odoo: Odoo version 17.0 
+2025-08-27 17:48:58,184 19936 INFO ? odoo: Using configuration file at C:\Users\jefry\odoo\odoo.conf 
+2025-08-27 17:48:58,184 19936 INFO ? odoo: addons paths: ['C:\\Users\\jefry\\odoo\\odoo\\addons', 'c:\\users\\jefry\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\jefry\\documents\\github\\pruebafinal\\addons', 'c:\\users\\jefry\\odoo\\odoo\\addons'] 
+2025-08-27 17:48:58,184 19936 INFO ? odoo: database: odoo@localhost:5432 
+2025-08-27 17:48:58,312 19936 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-08-27 17:48:58,312 19936 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jefry\odoo\odoo\addons\base\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\__init__.py", line 3, in <module>
+    from . import assetsbundle
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\assetsbundle.py", line 27, in <module>
+    from rjsmin import jsmin as rjsmin
+ModuleNotFoundError: No module named 'rjsmin'
+2025-08-27 17:48:58,316 19936 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-08-27 17:48:58,317 19936 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+ModuleNotFoundError: No module named 'odoo.addons.web'
+2025-08-27 17:48:58,332 19936 INFO ? odoo.service.server: HTTP service (werkzeug) running on DARIOXICON.localdomain:8069 
+2025-08-27 17:50:51,163 3740 INFO ? odoo: Odoo version 17.0 
+2025-08-27 17:50:51,163 3740 INFO ? odoo: Using configuration file at C:\Users\jefry\odoo\odoo.conf 
+2025-08-27 17:50:51,164 3740 INFO ? odoo: addons paths: ['C:\\Users\\jefry\\odoo\\odoo\\addons', 'c:\\users\\jefry\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\jefry\\documents\\github\\pruebafinal\\addons', 'c:\\users\\jefry\\odoo\\odoo\\addons'] 
+2025-08-27 17:50:51,164 3740 INFO ? odoo: database: odoo@localhost:5432 
+2025-08-27 17:50:51,686 3740 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-08-27 17:50:51,994 3740 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-08-27 17:50:51,994 3740 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jefry\odoo\odoo\addons\base\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\__init__.py", line 21, in <module>
+    from . import ir_mail_server
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-08-27 17:50:51,998 3740 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-08-27 17:50:51,998 3740 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+ModuleNotFoundError: No module named 'odoo.addons.web'
+2025-08-27 17:50:52,016 3740 INFO ? odoo.service.server: HTTP service (werkzeug) running on DARIOXICON.localdomain:8069 
+2025-08-27 17:57:31,219 5644 INFO ? odoo: Odoo version 17.0 
+2025-08-27 17:57:31,220 5644 INFO ? odoo: Using configuration file at C:\Users\jefry\odoo\odoo.conf 
+2025-08-27 17:57:31,220 5644 INFO ? odoo: addons paths: ['C:\\Users\\jefry\\odoo\\odoo\\addons', 'c:\\users\\jefry\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\jefry\\documents\\github\\pruebafinal\\addons', 'c:\\users\\jefry\\odoo\\odoo\\addons'] 
+2025-08-27 17:57:31,220 5644 INFO ? odoo: database: odoo@localhost:5432 
+2025-08-27 17:57:31,458 5644 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-08-27 17:57:31,539 5644 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-08-27 17:57:31,539 5644 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jefry\odoo\odoo\addons\base\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\__init__.py", line 21, in <module>
+    from . import ir_mail_server
+  File "C:\Users\jefry\odoo\odoo\addons\base\models\ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-08-27 17:57:31,543 5644 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-08-27 17:57:31,544 5644 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "C:\Users\jefry\odoo\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jefry\odoo\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+ModuleNotFoundError: No module named 'odoo.addons.web'
+2025-08-27 17:57:31,565 5644 INFO ? odoo.service.server: HTTP service (werkzeug) running on DARIOXICON.localdomain:8069 
+2025-08-28 20:32:32,649 6760 WARNING ? py.warnings: C:\Users\jefry\odoo\odoo\tools\config.py:579: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "C:\Users\jefry\odoo\odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "C:\Users\jefry\odoo\odoo\cli\command.py", line 66, in main
+    o.run(args)
+  File "C:\Users\jefry\odoo\odoo\cli\server.py", line 186, in run
+    main(args)
+  File "C:\Users\jefry\odoo\odoo\cli\server.py", line 133, in main
+    odoo.tools.config.parse_config(args)
+  File "C:\Users\jefry\odoo\odoo\tools\config.py", line 390, in parse_config
+    self._warn_deprecated_options()
+  File "C:\Users\jefry\odoo\odoo\tools\config.py", line 579, in _warn_deprecated_options
+    warnings.warn(
+ 
+2025-08-28 20:32:32,651 6760 INFO ? odoo: Odoo version 17.0 
+2025-08-28 20:32:32,652 6760 INFO ? odoo: Using configuration file at C:\Users\jefry\odoo\odoo.conf 
+2025-08-28 20:32:32,652 6760 INFO ? odoo: addons paths: ['C:\\Users\\jefry\\odoo\\odoo\\addons', 'c:\\users\\jefry\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\jefry\\odoo\\odoo\\addons', 'c:\\users\\jefry\\odoo\\addons'] 
+2025-08-28 20:32:32,652 6760 INFO ? odoo: database: odoo@localhost:5432 
